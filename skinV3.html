@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Types & Recommended Routines – Pharmacist's Quick Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%);
+            color: #555;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 150, 136, 0.1);
+        }
+
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #009688;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+
+
+        /* Skin Type Icons Section */
+        .skin-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .combination-center {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .combination-center .skin-type-card {
+            max-width: 350px;
+            width: 100%;
+        }
+
+        .skin-type-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 150, 136, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+
+
+        .skin-type-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 150, 136, 0.2);
+        }
+
+        .skin-type-card.active {
+            border: 3px solid #009688;
+            background: #e0f7fa;
+        }
+
+        .skin-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: #e0f7fa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .skin-type-card:hover .skin-icon {
+            transform: scale(1.1);
+            background: #009688;
+        }
+
+        .skin-type-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #009688;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .skin-type-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #009688;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .skin-type-card:hover .tooltip {
+            opacity: 1;
+        }
+
+        /* Tabs Section */
+        .tabs-container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 150, 136, 0.1);
+            margin-bottom: 30px;
+            display: none;
+        }
+
+        .tabs-container.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .tabs-header {
+            display: flex;
+            border-bottom: 2px solid #e0f7fa;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 20px;
+            background: none;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .tab-btn.active {
+            background: #009688;
+            color: white;
+        }
+
+        .tab-content {
+            padding: 30px;
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Features Tab */
+        .features-list {
+            list-style: none;
+        }
+
+        .features-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e0f7fa;
+            display: flex;
+            align-items: center;
+        }
+
+        .features-list li:before {
+            content: "✓";
+            color: #009688;
+            font-weight: bold;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+
+        /* Products Tab */
+        .products-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .product-category {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid #009688;
+        }
+
+        .product-category h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: #009688;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .product-info {
+            margin-bottom: 10px;
+        }
+
+        .product-info strong {
+            color: #333;
+        }
+
+        .actives {
+            background: #fff9c4;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 8px;
+            display: inline-block;
+        }
+
+        /* Differentiation Tab */
+        .diff-points {
+            background: #e0f7fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .diff-points h4 {
+            color: #009688;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Sticky Navigation */
+        .sticky-nav {
+            position: sticky;
+            top: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 25px;
+            box-shadow: 0 4px 20px rgba(0, 150, 136, 0.1);
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .sticky-nav.show {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .nav-btn {
+            padding: 8px 16px;
+            background: #e0f7fa;
+            border: none;
+            border-radius: 20px;
+            color: #009688;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-btn:hover, .nav-btn.active {
+            background: #009688;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 20px 15px;
+                margin-bottom: 30px;
+            }
+
+            .header h1 {
+                font-size: 1.6rem;
+                margin-bottom: 8px;
+            }
+
+            .header p {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            
+            .skin-types {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .skin-type-card {
+                padding: 20px;
+            }
+
+            .skin-type-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .skin-type-card p {
+                font-size: 0.9rem;
+            }
+
+            .skin-icon {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 15px;
+            }
+
+            .combination-center {
+                margin-bottom: 30px;
+            }
+            
+            .tabs-header {
+                flex-direction: column;
+            }
+            
+            .tab-btn {
+                border-radius: 0;
+                padding: 15px;
+                font-size: 0.95rem;
+            }
+
+            .tab-content {
+                padding: 20px;
+            }
+
+            .tab-content h3 {
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+            }
+
+            .features-list li {
+                padding: 10px 0;
+                font-size: 0.9rem;
+            }
+
+            .product-category {
+                padding: 15px;
+            }
+
+            .product-category h4 {
+                font-size: 1.1rem;
+                margin-bottom: 12px;
+            }
+
+            .product-info {
+                font-size: 0.9rem;
+            }
+
+            .actives {
+                font-size: 0.8rem;
+                padding: 6px 10px;
+            }
+
+            .diff-points {
+                padding: 15px;
+                margin-bottom: 12px;
+            }
+
+            .diff-points h4 {
+                font-size: 1.1rem;
+                margin-bottom: 8px;
+            }
+
+            .diff-points p {
+                font-size: 0.9rem;
+            }
+            
+            .sticky-nav {
+                flex-wrap: wrap;
+                padding: 12px;
+                gap: 10px;
+            }
+
+            .nav-btn {
+                padding: 6px 12px;
+                font-size: 0.85rem;
+            }
+
+            .tooltip {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 15px 10px;
+            }
+
+            .header h1 {
+                font-size: 1.4rem;
+            }
+
+            .skin-type-card {
+                padding: 15px;
+            }
+
+            .skin-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .tab-content {
+                padding: 15px;
+            }
+
+            .sticky-nav {
+                position: relative;
+                top: 0;
+                margin-bottom: 15px;
+            }
+        }
+    </style> -->
+    <!-- <style> 
+    * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+    } 
+
+    body { 
+        font-family: 'Open Sans', sans-serif; 
+        background: linear-gradient(135deg, #e0f7fa 0%, #ffffff 100%); 
+        color: #444; 
+        line-height: 1.6; 
+        min-height: 100vh; 
+    } 
+
+    .container { 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 20px; 
+    } 
+
+    /* Header Styles */ 
+    .header { 
+        text-align: center; 
+        margin-bottom: 40px; 
+        background: #ffffff; 
+        padding: 30px; 
+        border-radius: 15px; 
+        box-shadow: 0 4px 20px rgba(0, 150, 136, 0.15); 
+    } 
+
+    .header h1 { 
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 700; 
+        color: #009688; 
+        font-size: 2.2rem; 
+        margin-bottom: 10px; 
+    } 
+
+    .header p { 
+        color: #666; 
+        font-size: 1.1rem; 
+        margin-bottom: 25px; 
+    } 
+
+    /* Skin Type Icons Section */ 
+    .skin-types { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        gap: 20px; 
+        margin-bottom: 30px; 
+    } 
+
+    .combination-center { 
+        display: flex; 
+        justify-content: center; 
+        margin-bottom: 40px; 
+    } 
+
+    .combination-center .skin-type-card { 
+        max-width: 350px; 
+        width: 100%; 
+    } 
+
+    .skin-type-card { 
+        background: #ffffff; 
+        border-radius: 15px; 
+        padding: 25px; 
+        text-align: center; 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        box-shadow: 0 4px 20px rgba(0, 150, 136, 0.1); 
+        position: relative; 
+        overflow: hidden; 
+    } 
+
+    .skin-type-card:hover { 
+        transform: translateY(-5px); 
+        box-shadow: 0 8px 30px rgba(0, 150, 136, 0.25); 
+    } 
+
+    .skin-type-card.active { 
+        border: 3px solid #009688; 
+        background: #e0f7fa; 
+    } 
+
+    .skin-icon { 
+        width: 80px; 
+        height: 80px; 
+        margin: 0 auto 20px; 
+        background: #e0f7fa; 
+        border-radius: 50%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        font-size: 2.5rem; 
+        color: #009688;
+        transition: all 0.3s ease; 
+    } 
+
+    .skin-type-card:hover .skin-icon { 
+        transform: scale(1.1); 
+        background: #009688; 
+        color: #fff; 
+    } 
+
+    .skin-type-card h3 { 
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 600; 
+        color: #009688; 
+        font-size: 1.4rem; 
+        margin-bottom: 10px; 
+    } 
+
+    .skin-type-card p { 
+        color: #666; 
+        font-size: 0.95rem; 
+    } 
+
+    /* Tooltip */ 
+    .tooltip { 
+        position: absolute; 
+        top: -40px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        background: #009688; 
+        color: white; 
+        padding: 8px 12px; 
+        border-radius: 8px; 
+        font-size: 0.85rem; 
+        opacity: 0; 
+        pointer-events: none; 
+        transition: opacity 0.3s ease; 
+        white-space: nowrap; 
+    } 
+
+    .skin-type-card:hover .tooltip { 
+        opacity: 1; 
+    } 
+
+    /* Tabs Section */ 
+    .tabs-container { 
+        background: #ffffff; 
+        border-radius: 15px; 
+        box-shadow: 0 4px 20px rgba(0, 150, 136, 0.1); 
+        margin-bottom: 30px; 
+        display: none; 
+    } 
+
+    .tabs-container.active { 
+        display: block; 
+        animation: fadeIn 0.5s ease; 
+    } 
+
+    @keyframes fadeIn { 
+        from { opacity: 0; transform: translateY(20px); } 
+        to { opacity: 1; transform: translateY(0); } 
+    } 
+
+    .tabs-header { 
+        display: flex; 
+        border-bottom: 2px solid #e0f7fa; 
+    } 
+
+    .tab-btn { 
+        flex: 1; 
+        padding: 20px; 
+        background: none; 
+        border: none; 
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 600; 
+        color: #666; 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        border-radius: 15px 15px 0 0; 
+    } 
+
+    .tab-btn.active { 
+        background: #009688; 
+        color: white; 
+    } 
+
+    .tab-content { 
+        padding: 30px; 
+        display: none; 
+    } 
+
+    .tab-content.active { 
+        display: block; 
+    } 
+
+    /* Features Tab */ 
+    .features-list { 
+        list-style: none; 
+    } 
+
+    .features-list li { 
+        padding: 12px 0; 
+        border-bottom: 1px solid #e0f7fa; 
+        display: flex; 
+        align-items: center; 
+    } 
+
+    .features-list li:before { 
+        content: "✓"; 
+        color: #009688; 
+        font-weight: bold; 
+        margin-right: 15px; 
+        font-size: 1.2rem; 
+    } 
+
+    /* Products Tab */ 
+    .products-grid { 
+        display: grid; 
+        gap: 20px; 
+    } 
+
+    .product-category { 
+        background: #f8f9fa; 
+        border-radius: 12px; 
+        padding: 20px; 
+        border-left: 4px solid #009688; 
+    } 
+
+    .product-category h4 { 
+        font-family: 'Montserrat', sans-serif; 
+        color: #009688; 
+        margin-bottom: 15px; 
+        font-size: 1.2rem; 
+    } 
+
+    .product-info { 
+        margin-bottom: 10px; 
+    } 
+
+    .product-info strong { 
+        color: #333; 
+    } 
+
+    .actives { 
+        background: #e0f2f1; 
+        padding: 8px 12px; 
+        border-radius: 20px; 
+        font-size: 0.85rem; 
+        color: #555; 
+        margin-top: 8px; 
+        display: inline-block; 
+    } 
+
+    /* Differentiation Tab */ 
+    .diff-points { 
+        background: #e0f7fa; 
+        padding: 20px; 
+        border-radius: 12px; 
+        margin-bottom: 15px; 
+    } 
+
+    .diff-points h4 { 
+        color: #009688; 
+        margin-bottom: 10px; 
+        font-family: 'Montserrat', sans-serif; 
+    } 
+
+    /* Sticky Navigation */ 
+    .sticky-nav { 
+        position: sticky; 
+        top: 20px; 
+        background: #ffffff; 
+        padding: 15px; 
+        border-radius: 25px; 
+        box-shadow: 0 4px 20px rgba(0, 150, 136, 0.1); 
+        margin-bottom: 20px; 
+        display: none; 
+    } 
+
+    .sticky-nav.show { 
+        display: flex; 
+        justify-content: center; 
+        gap: 15px; 
+    } 
+
+    .nav-btn { 
+        padding: 8px 16px; 
+        background: #e0f7fa; 
+        border: none; 
+        border-radius: 20px; 
+        color: #009688; 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        font-weight: 500; 
+    } 
+
+    .nav-btn:hover, .nav-btn.active { 
+        background: #009688; 
+        color: white; 
+    } 
+</style> -->
+<style> 
+    * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+    } 
+
+    body { 
+        font-family: 'Open Sans', sans-serif; 
+        background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%); 
+        color: #f5f5f5; 
+        line-height: 1.6; 
+        min-height: 100vh; 
+    } 
+
+    .container { 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 20px; 
+    } 
+
+    /* Header Styles */ 
+    .header { 
+        text-align: center; 
+        margin-bottom: 40px; 
+        background: rgba(255,255,255,0.1); 
+        padding: 30px; 
+        border-radius: 15px; 
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
+    } 
+
+    .header h1 { 
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 700; 
+        color: #ffddc1; 
+        font-size: 2.2rem; 
+        margin-bottom: 10px; 
+    } 
+
+    .header p { 
+        color: #eee; 
+        font-size: 1.1rem; 
+        margin-bottom: 25px; 
+    } 
+
+    /* Skin Type Icons Section */ 
+    .skin-types { 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+        gap: 20px; 
+        margin-bottom: 30px; 
+    } 
+
+    .skin-type-card { 
+        background: rgba(255,255,255,0.15); 
+        border-radius: 15px; 
+        padding: 25px; 
+        text-align: center; 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
+        position: relative; 
+        overflow: hidden; 
+    } 
+
+    .skin-type-card:hover { 
+        transform: translateY(-5px); 
+        box-shadow: 0 8px 30px rgba(0,0,0,0.4); 
+    } 
+
+    .skin-type-card.active { 
+        border: 3px solid #ff7e5f; 
+        background: rgba(255,126,95,0.1); 
+    } 
+
+    .skin-icon { 
+        width: 80px; 
+        height: 80px; 
+        margin: 0 auto 20px; 
+        background: rgba(255,255,255,0.15); 
+        border-radius: 50%; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        font-size: 2.5rem; 
+        color: #26d0ce; 
+        transition: all 0.3s ease; 
+    } 
+
+    .skin-type-card:hover .skin-icon { 
+        transform: scale(1.1); 
+        background: #26d0ce; 
+        color: #fff; 
+    } 
+
+    .skin-type-card h3 { 
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 600; 
+        color: #ffffff; 
+        font-size: 1.4rem; 
+        margin-bottom: 10px; 
+    } 
+
+    .skin-type-card p { 
+        color: #eee; 
+        font-size: 0.95rem; 
+    } 
+
+    /* Tooltip */ 
+    .tooltip { 
+        position: absolute; 
+        top: -40px; 
+        left: 50%; 
+        transform: translateX(-50%); 
+        background: #ff7e5f; 
+        color: white; 
+        padding: 8px 12px; 
+        border-radius: 8px; 
+        font-size: 0.85rem; 
+        opacity: 0; 
+        pointer-events: none; 
+        transition: opacity 0.3s ease; 
+        white-space: nowrap; 
+    } 
+
+    .skin-type-card:hover .tooltip { 
+        opacity: 1; 
+    } 
+
+    /* Tabs Section */ 
+    .tabs-container { 
+        background: rgba(255,255,255,0.1); 
+        border-radius: 15px; 
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
+        margin-bottom: 30px; 
+        display: none; 
+        color: #fff; 
+    } 
+
+    .tabs-container.active { 
+        display: block; 
+        animation: fadeIn 0.5s ease; 
+    } 
+
+    @keyframes fadeIn { 
+        from { opacity: 0; transform: translateY(20px); } 
+        to { opacity: 1; transform: translateY(0); } 
+    } 
+
+    .tabs-header { 
+        display: flex; 
+        border-bottom: 2px solid #26d0ce; 
+    } 
+
+    .tab-btn { 
+        flex: 1; 
+        padding: 20px; 
+        background: none; 
+        border: none; 
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 600; 
+        color: #eee; 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        border-radius: 15px 15px 0 0; 
+    } 
+
+    .tab-btn.active { 
+        background: #ff7e5f; 
+        color: white; 
+    } 
+
+    .tab-content { 
+        padding: 30px; 
+        display: none; 
+    } 
+
+    .tab-content.active { 
+        display: block; 
+    } 
+
+    /* Features Tab */ 
+    .features-list { 
+        list-style: none; 
+    } 
+
+    .features-list li { 
+        padding: 12px 0; 
+        border-bottom: 1px solid rgba(36, 255, 251, 0.7); 
+        color: #1a2980;
+        background: white;
+        display: flex; 
+        align-items: center; 
+    } 
+
+    .features-list li:before { 
+        content: "✓ "; 
+        color: #26d0ce; 
+        font-weight: bold; 
+        margin-left: 15px; 
+        margin-right: 5px;
+        font-size: 1.2rem; 
+    } 
+
+    /* Products Tab */ 
+    .products-grid { 
+        display: grid; 
+        gap: 20px; 
+    } 
+
+    .product-category { 
+        background: rgba(255,255,255); 
+        color: #1a2980; 
+        border-radius: 12px; 
+        padding: 20px; 
+        border-right: 4px solid #26d0ce; 
+    } 
+
+    .product-category h4 { 
+        font-family: 'Montserrat', sans-serif; 
+        color: #1a2980; 
+        margin-bottom: 15px; 
+        font-size: 1.2rem; 
+    } 
+
+    .product-info strong { 
+        color: #fff; 
+    } 
+
+    .actives { 
+        background: rgba(255,126,95,0.9); 
+        padding: 8px 12px; 
+        border-radius: 20px; 
+        font-size: 0.85rem; 
+        color: #fff; 
+        margin-top: 8px; 
+        display: inline-block; 
+    } 
+
+    /* Differentiation Tab */ 
+    .diff-points { 
+        background: rgba(255,255,255);
+        color: #1a2980; 
+        padding: 20px; 
+        border-radius: 12px; 
+        margin-bottom: 15px; 
+    } 
+
+    .diff-points h4 { 
+        color: #1a2980; 
+        margin-bottom: 10px; 
+        font-family: 'Montserrat', sans-serif; 
+    } 
+
+    /* Sticky Navigation */ 
+    .sticky-nav { 
+        position: sticky; 
+        top: 20px; 
+        background: rgba(255,255,255,0.1); 
+        padding: 15px; 
+        border-radius: 25px; 
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
+        margin-bottom: 20px; 
+        display: none; 
+    } 
+
+    .sticky-nav.show { 
+        display: flex; 
+        justify-content: center; 
+        gap: 15px; 
+    } 
+
+    .nav-btn { 
+        padding: 8px 16px; 
+        background: #26d0ce; 
+        border: none; 
+        border-radius: 20px; 
+        color: #fff; 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        font-weight: 500; 
+    } 
+
+    .nav-btn:hover, .nav-btn.active { 
+        background: #ff7e5f; 
+        color: white; 
+    } 
+</style>
+
+
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Skin Types & Recommended Routines</h1>
+            <p>Pharmacist's Quick Guide</p>
+            
+        </div>
+
+        <!-- Sticky Navigation -->
+        <!-- <div class="sticky-nav" id="stickyNav">
+            <button class="nav-btn" onclick="showSkinType('oily')">Oily Skin</button>
+            <button class="nav-btn" onclick="showSkinType('dry')">Dry Skin</button>
+            <button class="nav-btn" onclick="showSkinType('combination')">Combination Skin</button>
+        </div> -->
+
+        <!-- Skin Type Selection -->
+        <div class="skin-types">
+            <div class="skin-type-card" onclick="showSkinType('oily')" id="oily-card">
+                <div class="tooltip">Excess oil production, enlarged pores</div>
+                <div class="skin-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Skin cross-section -->
+                        <path d="M5 35 Q15 30 25 35 Q35 40 45 35 Q50 33 55 35 L55 55 L5 55 Z" fill="#F4A6A6" stroke="#E89999" stroke-width="1"/>
+                        
+                        <!-- Sebaceous glands (small white circles) -->
+                        <circle cx="12" cy="45" r="2" fill="white"/>
+                        <circle cx="25" cy="42" r="2" fill="white"/>
+                        <circle cx="38" cy="47" r="2" fill="white"/>
+                        <circle cx="48" cy="44" r="2" fill="white"/>
+                        
+                        <!-- Magnifying glass -->
+                        <circle cx="30" cy="20" r="12" fill="none" stroke="#888" stroke-width="2"/>
+                        <line x1="40" y1="30" x2="45" y2="35" stroke="#888" stroke-width="2"/>
+                        
+                        <!-- Oil droplet inside magnifying glass -->
+                        <path d="M30 12 Q35 18 30 24 Q25 18 30 12 Z" fill="#4FC3F7"/>
+                    </svg>
+                </div>
+                <h3>Oily Skin</h3>
+                <!-- <p>Characterized by excess sebum production, especially in the T-zone area</p> -->
+            </div>
+
+            <div class="skin-type-card" onclick="showSkinType('dry')" id="dry-card">
+                <div class="tooltip">Low moisture, tight feeling, flaky texture</div>
+                <div class="skin-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Skin cross-section -->
+                        <path d="M5 35 Q15 32 25 35 Q35 38 45 35 Q50 33 55 35 L55 55 L5 55 Z" fill="#F4C2C2" stroke="#E89999" stroke-width="1"/>
+                        
+                        <!-- Magnifying glass -->
+                        <circle cx="30" cy="20" r="12" fill="none" stroke="#888" stroke-width="2"/>
+                        <line x1="40" y1="30" x2="45" y2="35" stroke="#888" stroke-width="2"/>
+                        
+                        <!-- Cracks inside magnifying glass -->
+                        <path d="M25 15 L28 18 L26 22 L30 20 L34 22 L32 18 L35 15" fill="none" stroke="#D4A574" stroke-width="1.5"/>
+                        <path d="M27 20 L33 16 M29 24 L31 19 M26 17 L32 21" stroke="#D4A574" stroke-width="1"/>
+                    </svg>
+                </div>
+                <h3>Dry Skin</h3>
+                <!-- <p>Low sebum production resulting in tight, rough, and flaky skin texture</p> -->
+            </div>
+            <div class="skin-type-card" onclick="showSkinType('combination')" id="combination-card">
+                <div class="tooltip">Mix of oily and dry areas on face</div>
+                <div class="skin-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Bottom layer (dermis) -->
+                        <rect x="5" y="45" width="50" height="10" fill="#F4A6A6"/>
+                        
+                        <!-- Middle layer with dashed line -->
+                        <rect x="5" y="35" width="50" height="10" fill="#F5E6D3"/>
+                        <line x1="10" y1="40" x2="50" y2="40" stroke="#81C784" stroke-width="1" stroke-dasharray="3,2"/>
+                        
+                        <!-- Top layer with uneven surface -->
+                        <path d="M5 35 Q15 32 25 35 Q35 38 45 35 Q50 33 55 35 L55 35 L5 35 Z" fill="#F5E6D3" stroke="#E8D5B7" stroke-width="1"/>
+                        
+                        <!-- Water droplets (left side) -->
+                        <path d="M12 20 Q15 25 12 28 Q9 25 12 20 Z" fill="#4FC3F7"/>
+                        <path d="M18 15 Q21 20 18 23 Q15 20 18 15 Z" fill="#4FC3F7"/>
+                        <path d="M24 22 Q27 27 24 30 Q21 27 24 22 Z" fill="#4FC3F7"/>
+                        
+                        <!-- Crack icon (top right) -->
+                        <circle cx="45" cy="18" r="8" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+                        <path d="M42 15 L44 17 L42 20 L45 18 L48 20 L46 17 L48 15" fill="none" stroke="#D4A574" stroke-width="1"/>
+                    </svg>
+                </div>
+                <h3>Combination Skin</h3>
+                <!-- <p>Mix of oily, dry, and normal patches across different facial areas</p> -->
+            </div>
+        </div>
+
+        <!-- Combination Skin Card - Centered -->
+        <!-- <div class="combination-center">
+            <div class="skin-type-card" onclick="showSkinType('combination')" id="combination-card">
+                <div class="tooltip">Mix of oily and dry areas on face</div>
+                <div class="skin-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                         Bottom layer (dermis) 
+                        <rect x="5" y="45" width="50" height="10" fill="#F4A6A6"/>
+                        
+                        Middle layer with dashed line 
+                        <rect x="5" y="35" width="50" height="10" fill="#F5E6D3"/>
+                        <line x1="10" y1="40" x2="50" y2="40" stroke="#81C784" stroke-width="1" stroke-dasharray="3,2"/>
+                        
+                        Top layer with uneven surface
+                        <path d="M5 35 Q15 32 25 35 Q35 38 45 35 Q50 33 55 35 L55 35 L5 35 Z" fill="#F5E6D3" stroke="#E8D5B7" stroke-width="1"/>
+                        
+                        Water droplets (left side) 
+                        <path d="M12 20 Q15 25 12 28 Q9 25 12 20 Z" fill="#4FC3F7"/>
+                        <path d="M18 15 Q21 20 18 23 Q15 20 18 15 Z" fill="#4FC3F7"/>
+                        <path d="M24 22 Q27 27 24 30 Q21 27 24 22 Z" fill="#4FC3F7"/>
+                        
+                        Crack icon (top right)
+                        <circle cx="45" cy="18" r="8" fill="#F5F5F5" stroke="#DDD" stroke-width="1"/>
+                        <path d="M42 15 L44 17 L42 20 L45 18 L48 20 L46 17 L48 15" fill="none" stroke="#D4A574" stroke-width="1"/>
+                    </svg>
+                </div>
+                <h3>Combination Skin</h3>
+                <p>Mix of oily, dry, and normal patches across different facial areas</p>
+            </div>
+        </div> -->
+
+        <!-- Oily Skin Tabs -->
+        <div class="tabs-container" id="oily-tabs">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="showTab('oily', 'features')">Features</button>
+                <button class="tab-btn" onclick="showTab('oily', 'differentiate')">How to Differentiate</button>
+                <button class="tab-btn" onclick="showTab('oily', 'products')">Suitable Products</button>
+            </div>
+
+            <div class="tab-content active" id="oily-features">
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Oily Skin Characteristics</h3>
+                <ul class="features-list">
+                    <li>زيادة في افراز الدهون </li>
+                    <li>مسام واسعة مع قابلية لظهور الرؤوس السوداء والبيضاء.</li>
+                    <li>عرضة لظهور حب الشباب والبثور. (Black & White Heads)</li>
+                    <li>البشرة تبدو لامعة خصوصًا في منتصف اليوم.</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="oily-differentiate">
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">How to Identify Oily Skin</h3>
+                <div class="diff-points">
+                    <h4>Key Indicators:</h4>
+                    <p>• تظهر البشرة بشكل لامع ودهني جدًا بعد غسلها بالصابون رغم عدم وضع أي مستحضرات<br>
+                    • يشتكي العميل من شكل المسام الواسعة وظهور بثور ورءوس بيضاء وسوداء بشكل مستمر <br>
+                    • العميلة تخبرك أن المكياج لا يثبت على بشرتها ويسيح بشكل سريع<br>
+                </div>
+                <div class="diff-points">
+                    <h4>Simple Test:</h4>
+                    <p>اضغط بمنديل نظيف على الوجه بعد 2–3 ساعات من غسله. البشرة الدهنية ستترك آثارًا واضحة من الزيوت على المنديل، خاصة في منطقة الـ T-zone.</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="oily-products">
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Recommended Products for Oily Skin</h3>
+                <div class="products-grid">
+                    <div class="product-category">
+                        <h4>🧴 الغسول</h4>
+                        <div class="product-info">
+                            <strong>Type:</strong> غسول Gel or Foam مع خصائص للتحكم في افراز الدهون
+                        </div>
+                        <div class="actives">Key Actives: Salicylic acid, niacinamide, zinc, tea tree oil</div>
+                    </div>
+
+                    <div class="product-category">
+                        <h4>💧 المرطب</h4>
+                        <div class="product-info">
+                            <strong>Type:</strong> مرطب ذو قوام جيل مائي خفيف خالي من الزيوت والمواد التي تسبب انسداد المسام 
+                        </div>
+                        <div class="actives">Key Actives: Niacinamide, hyaluronic acid, panthenol</div>
+                    </div>
+
+                    <div class="product-category">
+                        <h4>☀️ Sunscreen</h4>
+                        <div class="product-info">
+                            <strong>Type:</strong> Oil-free matte finish gel or fluid sunscreen
+                        </div>
+                                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dry Skin Tabs -->
+        <div class="tabs-container" id="dry-tabs">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="showTab('dry', 'features')">Features</button>
+                <button class="tab-btn" onclick="showTab('dry', 'differentiate')">How to Differentiate</button>
+                <button class="tab-btn" onclick="showTab('dry', 'products')">Suitable Products</button>
+            </div>
+
+            <div class="tab-content active" id="dry-features">
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Dry Skin Characteristics</h3>
+                <ul class="features-list">
+                    <li>نقص شديد في افراز الدهون والمواد الطبيعية المرطبة للبشرة </li>
+                    <li>شكل البشرة يكون جاف وأحيانًا مشقق مع وجود قشور</li>
+                    <li>البشرة أكثر عرضة للتهيج والالتهاب والخطوط الرفيعة بسبب قلة الترطيب وتدمير حاجز البشرة </li>
+                    <li>شكل المسام يكون صغير ولا يكاد يظهر </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="dry-differentiate">
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">How to Identify Dry Skin</h3>
+                <div class="diff-points">
+                    <h4>Key Indicators:</h4>
+                    <p>• العميل يخبرك باحساس شد كبير في بشرته بعد غسلها بالصابون<br>
+                    • يمكنك رؤية تشققات وقشور (Flakes) في البشرة <br>
+                    • العميل قد يشتكي من ظهور علامات تعبيرية او علامات تقدم في السن مبكرة<br>
+                    
+                </div>
+                <div class="diff-points">
+                    <h4>Simple Test:</h4>
+                    <p>نلاحظ جفاف شديد وتشققات في البشرة بعد غسلها بالغسول العادي.</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="dry-products">
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Recommended Products for Dry Skin</h3>
+                <div class="products-grid">
+                    <div class="product-category">
+                        <h4>🧴 الغسول</h4>
+                        <div class="product-info">
+                            <strong>Type:</strong> غسول لطيف كريمي أو زيتيّ القوام مما يمنحه خصائص ترطيب مع التنظيف
+                        </div>
+                        <div class="actives">Key Actives: Ceramides, glycerin, hyaluronic acid, oat extract</div>
+                    </div>
+
+                    <div class="product-category">
+                        <h4>💧 المرطب</h4>
+                        <div class="product-info">
+                            <strong>Type:</strong> تحتاج البشرة الجافة إلى مرطب قوي وغني مدعم بمواد لاصلاح حاجز البشرة وقد تحتاج إلى إعادة التطيب أكثر من مرة في اليوم
+                        </div>
+                        <div class="actives">Key Actives: Ceramides, Amino Acids:eg, squalane, shea butter, urea 2%, panthenol</div>
+                    </div>
+
+                    <div class="product-category">
+                        <h4>☀️ Sunscreen</h4>
+                        <div class="product-info">
+                            <strong>Type:</strong> Cream-based moisturizing sunscreen
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Combination Skin Tabs -->
+        <div class="tabs-container" id="combination-tabs">
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="showTab('combination', 'features')">Features</button>
+                <button class="tab-btn" onclick="showTab('combination', 'differentiate')">How to Differentiate</button>
+                <button class="tab-btn" onclick="showTab('combination', 'products')">Suitable Products</button>
+            </div>
+
+            <div class="tab-content active" id="combination-features">
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Combination Skin Characteristics</h3>
+                <ul class="features-list">
+                    <li>مزيج من مناطق دهنية، جافة، وطبيعية في الوجه، وقد تميل بشكل عام إلى البشرة الدهنية أو الجافة.</li>
+                    <li>غالبًا تكون منطقة الـ T-zone دهنية مع خدود طبيعية أو جافة.</li>
+                    <li>مسام واسعة في المناطق الدهنية وأصغر في المناطق الجافة.</li>
+                    <li>قد تظهر حبوب في المناطق الدهنية.</li>
+                    <li>التغيرات الموسمية قد تؤثر على التوازن، فقد تميل في الشتاء إلى خصائص البشرة الجافة وفي الصيف تميل إلى خصائص البشرة الدهنية. </li>
+                                    </ul>
+            </div>
+
+            <div class="tab-content" id="combination-differentiate">
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">How to Identify Combination Skin</h3>
+                <div class="diff-points">
+                    <h4>Key Indicators:</h4>
+                    <p>• قد تظهر عليها خصائص البشرة الدهنية أو الجافة في بعض المناطق في الوجه وليس بأكمله<br>
+                    • فقد تظهر مسام واسعة أو بثور في منطقة الـ T-Zone <br>
+                    • وعلى الجانب الآخر قد تظهر بقع جفاف على الخدين<br>
+                      </div>
+                <div class="diff-points">
+                    <h4>Simple Test:</h4>
+                    <p>استخدم اختبار المنديل بالضغط على مناطق متفرقة من الوجه، يُلاحظ وجود بقع زيتية في بعض المناطق، وقد يظهر بقع جفاف في مناطق أخرى، فهي بشرة تجمع خصائص مختلفة من البشرة الدهنية والجافة.</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="combination-products">
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Recommended Products for Combination Skin</h3>
+                <div class="products-grid">
+                    <div class="product-category">
+                        <h4>🧴 الغسول</h4>
+                        <div class="product-info">
+                            <strong>Type:</strong> غسول متوازن خفيف لتحقيق المتسوى المطلوب من التنظيف بدون أي اثار جانبيه
+                        </div>
+                    </div>
+
+                    <div class="product-category">
+                        <h4>💧 المرطب</h4>
+                        <div class="product-info">
+                            <strong>Type:</strong> مرطب ذو قوام مائي خفيف للمناطق الدهنية، وقد تحتاج إلى إضافة مرطب له قوام أثقل في المناطق الجافة أو إذا تطلب الأمر مع العميل
+                        </div>
+                        <div class="actives">Key Actives: Hyaluronic acid, niacinamide, panthenol</div>
+                    </div>
+
+                    <div class="product-category">
+                        <h4>☀️ Sunscreen</h4>
+                        <div class="product-info">
+                            <strong>Type:</strong> Lightweight gel-lotion hybrid
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSkinType = null;
+
+        function showSkinType(skinType) {
+            // Hide all tabs
+            document.querySelectorAll('.tabs-container').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Remove active class from all cards
+            document.querySelectorAll('.skin-type-card').forEach(card => {
+                card.classList.remove('active');
+            });
+
+            // Show selected skin type tabs
+            document.getElementById(skinType + '-tabs').classList.add('active');
+            document.getElementById(skinType + '-card').classList.add('active');
+
+            // Update sticky nav
+            document.getElementById('stickyNav').classList.add('show');
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Set current skin type
+            currentSkinType = skinType;
+
+            // Scroll to tabs
+            document.getElementById(skinType + '-tabs').scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
+        }
+
+        function showTab(skinType, tabName) {
+            // Hide all tab contents for this skin type
+            document.querySelectorAll(`#${skinType}-tabs .tab-content`).forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active class from all tab buttons for this skin type
+            document.querySelectorAll(`#${skinType}-tabs .tab-btn`).forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            // Show selected tab content
+            document.getElementById(`${skinType}-${tabName}`).classList.add('active');
+
+            // Add active class to clicked tab button
+            event.target.classList.add('active');
+        }
+
+
+
+        // Sticky navigation functionality
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96e75e08f4cc2438',t:'MTc1NTA3OTI0Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
