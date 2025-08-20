@@ -777,6 +777,7 @@
         max-width: 1200px; 
         margin: 0 auto; 
         padding: 20px; 
+        text-align: center;
     } 
 
     /* Header Styles */ 
@@ -953,7 +954,8 @@
         color: #1a2980;
         background: white;
         display: flex; 
-        align-items: center; 
+        align-items: center;
+        justify-content: center; 
     } 
 
     .features-list li:before { 
@@ -1142,28 +1144,12 @@
 
 </head>
 <body>
-    <nav class="navbar">
-  <div class="nav-container">
     
-    <button class="burger" id="burger">&#9776;</button>
-    <ul class="nav-links" id="navLinks">
-        <li><a href="AB.html">AB Calculator</a></li>
-        <li><a href="safe.html">Pregnancy Safety</a></li>
-        <li><a href="ask.html">Ask</a></li>
-        <li><a href="consult.html">Consultation</a></li>
-        <li><a href="main.html">Home</a></li>
-    </ul>
-    <a href="main.html" class="nav-logo">
-      <img src="logo.png" alt="Logo">
-      <span>UPC Consult</span>
-    </a>
-  </div>
-</nav>
     <div class="container">
         <!-- Header -->
         <div class="header">
             <h1>Skin Types & Recommended Routines</h1>
-            <p>Pharmacist's Quick Guide</p>
+            <p>A Quick Pharmacist's Guide</p>
             
         </div>
 
@@ -1197,7 +1183,7 @@
                         <path d="M30 12 Q35 18 30 24 Q25 18 30 12 Z" fill="#4FC3F7"/>
                     </svg>
                 </div>
-                <h3>Oily Skin</h3>
+                <h3>البشرة الدهنية</h3>
                 <!-- <p>Characterized by excess sebum production, especially in the T-zone area</p> -->
             </div>
 
@@ -1217,7 +1203,7 @@
                         <path d="M27 20 L33 16 M29 24 L31 19 M26 17 L32 21" stroke="#D4A574" stroke-width="1"/>
                     </svg>
                 </div>
-                <h3>Dry Skin</h3>
+                <h3>البشرة الجافة</h3>
                 <!-- <p>Low sebum production resulting in tight, rough, and flaky skin texture</p> -->
             </div>
             <div class="skin-type-card" onclick="showSkinType('combination')" id="combination-card">
@@ -1244,7 +1230,7 @@
                         <path d="M42 15 L44 17 L42 20 L45 18 L48 20 L46 17 L48 15" fill="none" stroke="#D4A574" stroke-width="1"/>
                     </svg>
                 </div>
-                <h3>Combined  Skin</h3>
+                <h3>البشرة المختلطة</h3>
                 <!-- <p>Mix of oily, dry, and normal patches across different facial areas</p> -->
             </div>
         </div>
@@ -1283,13 +1269,13 @@
         <!-- Oily Skin Tabs -->
         <div class="tabs-container" id="oily-tabs">
             <div class="tabs-header">
-                <button class="tab-btn active" onclick="showTab('oily', 'features')">Features</button>
-                <button class="tab-btn" onclick="showTab('oily', 'differentiate')">How to Differentiate</button>
-                <button class="tab-btn" onclick="showTab('oily', 'products')">Suitable Products</button>
+                <button class="tab-btn active" onclick="showTab('oily', 'features')">الخصائص</button>
+                <button class="tab-btn" onclick="showTab('oily', 'differentiate')">كيفية التفريق</button>
+                <button class="tab-btn" onclick="showTab('oily', 'products')">المنتجات المناسبة</button>
             </div>
 
             <div class="tab-content active" id="oily-features">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Oily Skin Characteristics</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">خصائص البشرة الدهنية</h3>
                 <ul class="features-list">
                     <li>زيادة في افراز الدهون </li>
                     <li>مسام واسعة مع قابلية لظهور الرؤوس السوداء والبيضاء.</li>
@@ -1299,7 +1285,7 @@
             </div>
 
             <div class="tab-content" id="oily-differentiate">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">How to Identify Oily Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">كيفية تمييز البشرة الدهنية</h3>
                 <div class="diff-points">
                     <h4>Key Indicators:</h4>
                     <p>• تظهر البشرة بشكل لامع ودهني جدًا بعد غسلها بالصابون رغم عدم وضع أي مستحضرات<br>
@@ -1313,7 +1299,7 @@
             </div>
 
             <div class="tab-content" id="oily-products">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Recommended Products for Oily Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">المنتجات المناسبة للبشرة الدهنية</h3>
                 <div class="products-grid">
                     <div class="product-category">
                         <h4>🧴 الغسول</h4>
@@ -1321,6 +1307,9 @@
                             <strong>Type:</strong> غسول Gel or Foam مع خصائص للتحكم في افراز الدهون
                         </div>
                         <div class="actives">Key Actives: Salicylic acid, niacinamide, zinc, tea tree oil</div>
+                        <br>
+                        <div class="actives">Dcl Active Mattifying Cleanser, Uriage Hyseac Cleansing Gel
+</div>
                     </div>
 
                     <div class="product-category">
@@ -1329,14 +1318,19 @@
                             <strong>Type:</strong> مرطب ذو قوام جيل مائي خفيف خالي من الزيوت والمواد التي تسبب انسداد المسام 
                         </div>
                         <div class="actives">Key Actives: Niacinamide, hyaluronic acid, panthenol</div>
+                        <br>
+                        <div class="actives">Ducray Keracnyl Repair Cream for Acne Prone Skin, Bioderma Sebium Hydra
+ </div>
                     </div>
 
                     <div class="product-category">
-                        <h4>☀️ Sunscreen</h4>
+                        <h4>☀️ واقى الشمس</h4>
                         <div class="product-info">
                             <strong>Type:</strong> Oil-free matte finish gel or fluid sunscreen
                         </div>
-                                        </div>
+                        <div class="actives">LA ROCHE P. ANTHELIOS UVMUNE SPF50+ Gel Cream Oil Control, Uriage Hyseac Spf 50+ Fluid 50
+ </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1344,13 +1338,13 @@
         <!-- Dry Skin Tabs -->
         <div class="tabs-container" id="dry-tabs">
             <div class="tabs-header">
-                <button class="tab-btn active" onclick="showTab('dry', 'features')">Features</button>
-                <button class="tab-btn" onclick="showTab('dry', 'differentiate')">How to Differentiate</button>
-                <button class="tab-btn" onclick="showTab('dry', 'products')">Suitable Products</button>
+                <button class="tab-btn active" onclick="showTab('dry', 'features')">الخصائص</button>
+                <button class="tab-btn" onclick="showTab('dry', 'differentiate')">كيفية التفريق</button>
+                <button class="tab-btn" onclick="showTab('dry', 'products')">المنتجات المناسبة</button>
             </div>
 
             <div class="tab-content active" id="dry-features">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Dry Skin Characteristics</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">خصائص البشرة الجافة</h3>
                 <ul class="features-list">
                     <li>نقص شديد في افراز الدهون والمواد الطبيعية المرطبة للبشرة </li>
                     <li>شكل البشرة يكون جاف وأحيانًا مشقق مع وجود قشور</li>
@@ -1360,7 +1354,7 @@
             </div>
 
             <div class="tab-content" id="dry-differentiate">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">How to Identify Dry Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">كيفية تمميز البشرة الجافة</h3>
                 <div class="diff-points">
                     <h4>Key Indicators:</h4>
                     <p>• العميل يخبرك باحساس شد كبير في بشرته بعد غسلها بالصابون<br>
@@ -1375,7 +1369,7 @@
             </div>
 
             <div class="tab-content" id="dry-products">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Recommended Products for Dry Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">المنتجات المناسبة للبشرة الجافة</h3>
                 <div class="products-grid">
                     <div class="product-category">
                         <h4>🧴 الغسول</h4>
@@ -1383,6 +1377,9 @@
                             <strong>Type:</strong> غسول لطيف كريمي أو زيتيّ القوام مما يمنحه خصائص ترطيب مع التنظيف
                         </div>
                         <div class="actives">Key Actives: Ceramides, glycerin, hyaluronic acid, oat extract</div>
+                        <br>
+                        <div class="actives">Uriage Xemose Gentle Cleansing, Cerave Hydrating Cleanser for Normal to Dry Skin
+ </div>
                     </div>
 
                     <div class="product-category">
@@ -1391,14 +1388,19 @@
                             <strong>Type:</strong> تحتاج البشرة الجافة إلى مرطب قوي وغني مدعم بمواد لاصلاح حاجز البشرة وقد تحتاج إلى إعادة التطيب أكثر من مرة في اليوم
                         </div>
                         <div class="actives">Key Actives: Ceramides, Amino Acids:eg, squalane, shea butter, urea 2%, panthenol</div>
+                        <br>
+                        <div class="actives"> Cetaphil Moisturizing Cream, Cerave Moisturizing Cream for Dry Skin
+</div>
                     </div>
 
                     <div class="product-category">
-                        <h4>☀️ Sunscreen</h4>
+                        <h4>☀️ واقى الشمس</h4>
                         <div class="product-info">
                             <strong>Type:</strong> Cream-based moisturizing sunscreen
                         </div>
-                                            </div>
+                        <div class="actives"> Avene Hydrance UV Rich SPF, La Roche Posay Anthelios Cream SPF50+
+</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1406,24 +1408,24 @@
         <!-- Combination Skin Tabs -->
         <div class="tabs-container" id="combination-tabs">
             <div class="tabs-header">
-                <button class="tab-btn active" onclick="showTab('combination', 'features')">Features</button>
-                <button class="tab-btn" onclick="showTab('combination', 'differentiate')">How to Differentiate</button>
-                <button class="tab-btn" onclick="showTab('combination', 'products')">Suitable Products</button>
+                <button class="tab-btn active" onclick="showTab('combination', 'features')">الخصائص</button>
+                <button class="tab-btn" onclick="showTab('combination', 'differentiate')">كيفية التفريق</button>
+                <button class="tab-btn" onclick="showTab('combination', 'products')">المنتجات المناسبة</button>
             </div>
 
             <div class="tab-content active" id="combination-features">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Combined  Skin Characteristics</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">خصائص البشرة المختلطة</h3>
                 <ul class="features-list">
                     <li>مزيج من مناطق دهنية، جافة، وطبيعية في الوجه، وقد تميل بشكل عام إلى البشرة الدهنية أو الجافة.</li>
                     <li>غالبًا تكون منطقة الـ T-zone دهنية مع خدود طبيعية أو جافة.</li>
                     <li>مسام واسعة في المناطق الدهنية وأصغر في المناطق الجافة.</li>
                     <li>قد تظهر حبوب في المناطق الدهنية.</li>
                     <li>التغيرات الموسمية قد تؤثر على التوازن، فقد تميل في الشتاء إلى خصائص البشرة الجافة وفي الصيف تميل إلى خصائص البشرة الدهنية. </li>
-                                    </ul>
+                </ul>
             </div>
 
             <div class="tab-content" id="combination-differentiate">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">How to Identify Combined  Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">كيفية تمييز البشرة المختلطة</h3>
                 <div class="diff-points">
                     <h4>Key Indicators:</h4>
                     <p>• قد تظهر عليها خصائص البشرة الدهنية أو الجافة في بعض المناطق في الوجه وليس بأكمله<br>
@@ -1437,13 +1439,15 @@
             </div>
 
             <div class="tab-content" id="combination-products">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Recommended Products for Combined  Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">المنتجات المناسبة للبشرة المختلطة</h3>
                 <div class="products-grid">
                     <div class="product-category">
                         <h4>🧴 الغسول</h4>
                         <div class="product-info">
                             <strong>Type:</strong> غسول متوازن خفيف لتحقيق المتسوى المطلوب من التنظيف بدون أي اثار جانبيه
                         </div>
+                        <div class="actives">Caudalie Instant Foaming Cleanser, Derma Pella Normal Face Cleanser
+ </div>
                     </div>
 
                     <div class="product-category">
@@ -1452,13 +1456,18 @@
                             <strong>Type:</strong> مرطب ذو قوام مائي خفيف للمناطق الدهنية، وقد تحتاج إلى إضافة مرطب له قوام أثقل في المناطق الجافة أو إذا تطلب الأمر مع العميل
                         </div>
                         <div class="actives">Key Actives: Hyaluronic acid, niacinamide, panthenol</div>
+                        <br>
+                        <div class="actives">Cetaphil Moisturising Lotion (Combined to dry) Neutrogena Moisturizer Water Gel Hydro Boost (Combined to oily)
+</div>
                     </div>
 
                     <div class="product-category">
-                        <h4>☀️ Sunscreen</h4>
+                        <h4>☀️ واقى الشمس</h4>
                         <div class="product-info">
                             <strong>Type:</strong> Lightweight gel-lotion hybrid
                         </div>
+                        <div class="actives"> LA ROCHE P. ANTHELIOS UVMUNE SPF50+ FLUID, Avene Sunscreen Fluid Spf 50
+</div>
                     </div>
                 </div>
             </div>
@@ -1530,5 +1539,7 @@
             });
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96e75e08f4cc2438',t:'MTc1NTA3OTI0Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96e75e08f4cc2438',t:'MTc1NTA3OTI0Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();
+    </script>
+    </body>
 </html>
