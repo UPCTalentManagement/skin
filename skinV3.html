@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skin Types & Recommended Routines – Pharmacist's Quick Guide</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
     <!-- <style>
         * {
             margin: 0;
@@ -762,7 +765,8 @@
     } 
 
     body { 
-        font-family: 'Open Sans', sans-serif; 
+        font-family: 'Noto Sans Arabic', sans-serif;
+        /* font-family: 'Open Sans', sans-serif;  */
         background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%); 
         color: #f5f5f5; 
         line-height: 1.6; 
@@ -786,7 +790,8 @@
     } 
 
     .header h1 { 
-        font-family: 'Montserrat', sans-serif; 
+        font-family: 'Noto Sans Arabic', sans-serif;
+        /* font-family: 'Montserrat', sans-serif;  */
         font-weight: 700; 
         color: #ffddc1; 
         font-size: 2.2rem; 
@@ -850,7 +855,8 @@
     } 
 
     .skin-type-card h3 { 
-        font-family: 'Montserrat', sans-serif; 
+        font-family: 'Noto Sans Arabic', sans-serif;
+        /* font-family: 'Montserrat', sans-serif;  */
         font-weight: 600; 
         color: #ffffff; 
         font-size: 1.4rem; 
@@ -913,7 +919,8 @@
         padding: 20px; 
         background: none; 
         border: none; 
-        font-family: 'Montserrat', sans-serif; 
+        /* font-family: 'Montserrat', sans-serif;  */
+        font-family: 'Noto Sans Arabic', sans-serif;
         font-weight: 600; 
         color: #eee; 
         cursor: pointer; 
@@ -973,7 +980,8 @@
     } 
 
     .product-category h4 { 
-        font-family: 'Montserrat', sans-serif; 
+        /* font-family: 'Montserrat', sans-serif;  */
+        font-family: 'Noto Sans Arabic', sans-serif;
         color: #1a2980; 
         margin-bottom: 15px; 
         font-size: 1.2rem; 
@@ -1005,7 +1013,8 @@
     .diff-points h4 { 
         color: #1a2980; 
         margin-bottom: 10px; 
-        font-family: 'Montserrat', sans-serif; 
+        /* font-family: 'Montserrat', sans-serif;  */
+        font-family: 'Noto Sans Arabic', sans-serif;
     } 
 
     /* Sticky Navigation */ 
@@ -1041,11 +1050,115 @@
         background: #ff7e5f; 
         color: white; 
     } 
+    
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.nav-logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
 </style>
 
 
 </head>
 <body>
+    <nav class="navbar">
+  <div class="nav-container">
+    
+    <button class="burger" id="burger">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="AB.html">AB Calculator</a></li>
+        <li><a href="safe.html">Pregnancy Safety</a></li>
+        <li><a href="ask.html">Ask</a></li>
+        <li><a href="consult.html">Consultation</a></li>
+        <li><a href="main.html">Home</a></li>
+    </ul>
+    <a href="main.html" class="nav-logo">
+      <img src="logo.png" alt="Logo">
+      <span>UPC Consult</span>
+    </a>
+  </div>
+</nav>
     <div class="container">
         <!-- Header -->
         <div class="header">
@@ -1058,7 +1171,7 @@
         <!-- <div class="sticky-nav" id="stickyNav">
             <button class="nav-btn" onclick="showSkinType('oily')">Oily Skin</button>
             <button class="nav-btn" onclick="showSkinType('dry')">Dry Skin</button>
-            <button class="nav-btn" onclick="showSkinType('combination')">Combination Skin</button>
+            <button class="nav-btn" onclick="showSkinType('combination')">Combined  Skin</button>
         </div> -->
 
         <!-- Skin Type Selection -->
@@ -1131,7 +1244,7 @@
                         <path d="M42 15 L44 17 L42 20 L45 18 L48 20 L46 17 L48 15" fill="none" stroke="#D4A574" stroke-width="1"/>
                     </svg>
                 </div>
-                <h3>Combination Skin</h3>
+                <h3>Combined  Skin</h3>
                 <!-- <p>Mix of oily, dry, and normal patches across different facial areas</p> -->
             </div>
         </div>
@@ -1162,7 +1275,7 @@
                         <path d="M42 15 L44 17 L42 20 L45 18 L48 20 L46 17 L48 15" fill="none" stroke="#D4A574" stroke-width="1"/>
                     </svg>
                 </div>
-                <h3>Combination Skin</h3>
+                <h3>Combined  Skin</h3>
                 <p>Mix of oily, dry, and normal patches across different facial areas</p>
             </div>
         </div> -->
@@ -1176,7 +1289,7 @@
             </div>
 
             <div class="tab-content active" id="oily-features">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Oily Skin Characteristics</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Oily Skin Characteristics</h3>
                 <ul class="features-list">
                     <li>زيادة في افراز الدهون </li>
                     <li>مسام واسعة مع قابلية لظهور الرؤوس السوداء والبيضاء.</li>
@@ -1186,7 +1299,7 @@
             </div>
 
             <div class="tab-content" id="oily-differentiate">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">How to Identify Oily Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">How to Identify Oily Skin</h3>
                 <div class="diff-points">
                     <h4>Key Indicators:</h4>
                     <p>• تظهر البشرة بشكل لامع ودهني جدًا بعد غسلها بالصابون رغم عدم وضع أي مستحضرات<br>
@@ -1200,7 +1313,7 @@
             </div>
 
             <div class="tab-content" id="oily-products">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Recommended Products for Oily Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Recommended Products for Oily Skin</h3>
                 <div class="products-grid">
                     <div class="product-category">
                         <h4>🧴 الغسول</h4>
@@ -1237,7 +1350,7 @@
             </div>
 
             <div class="tab-content active" id="dry-features">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Dry Skin Characteristics</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Dry Skin Characteristics</h3>
                 <ul class="features-list">
                     <li>نقص شديد في افراز الدهون والمواد الطبيعية المرطبة للبشرة </li>
                     <li>شكل البشرة يكون جاف وأحيانًا مشقق مع وجود قشور</li>
@@ -1247,7 +1360,7 @@
             </div>
 
             <div class="tab-content" id="dry-differentiate">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">How to Identify Dry Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">How to Identify Dry Skin</h3>
                 <div class="diff-points">
                     <h4>Key Indicators:</h4>
                     <p>• العميل يخبرك باحساس شد كبير في بشرته بعد غسلها بالصابون<br>
@@ -1262,7 +1375,7 @@
             </div>
 
             <div class="tab-content" id="dry-products">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Recommended Products for Dry Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Recommended Products for Dry Skin</h3>
                 <div class="products-grid">
                     <div class="product-category">
                         <h4>🧴 الغسول</h4>
@@ -1299,7 +1412,7 @@
             </div>
 
             <div class="tab-content active" id="combination-features">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Combination Skin Characteristics</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Combined  Skin Characteristics</h3>
                 <ul class="features-list">
                     <li>مزيج من مناطق دهنية، جافة، وطبيعية في الوجه، وقد تميل بشكل عام إلى البشرة الدهنية أو الجافة.</li>
                     <li>غالبًا تكون منطقة الـ T-zone دهنية مع خدود طبيعية أو جافة.</li>
@@ -1310,7 +1423,7 @@
             </div>
 
             <div class="tab-content" id="combination-differentiate">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">How to Identify Combination Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">How to Identify Combined  Skin</h3>
                 <div class="diff-points">
                     <h4>Key Indicators:</h4>
                     <p>• قد تظهر عليها خصائص البشرة الدهنية أو الجافة في بعض المناطق في الوجه وليس بأكمله<br>
@@ -1324,7 +1437,7 @@
             </div>
 
             <div class="tab-content" id="combination-products">
-                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Montserrat', sans-serif;">Recommended Products for Combination Skin</h3>
+                <h3 style="color: #ffffff; margin-bottom: 20px; font-family: 'Noto Sans Arabic', sans-serif;">Recommended Products for Combined  Skin</h3>
                 <div class="products-grid">
                     <div class="product-category">
                         <h4>🧴 الغسول</h4>
@@ -1353,6 +1466,9 @@
     </div>
 
     <script>
+        document.getElementById("burger").addEventListener("click", function () {
+    document.getElementById("navLinks").classList.toggle("show");
+  });
         let currentSkinType = null;
 
         function showSkinType(skinType) {
